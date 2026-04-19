@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.financeapp.ui.home.HomeFragment"
+        android:label="Início"
+        tools:layout="@layout/fragment_home"
+        xmlns:tools="http://schemas.android.com/tools">
+        <action
+            android:id="@+id/action_home_to_addTransaction"
+            app:destination="@id/addTransactionFragment"
+            app:enterAnim="@anim/slide_in_up"
+            app:exitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_home_to_transactions"
+            app:destination="@id/transactionsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addTransactionFragment"
+        android:name="com.financeapp.ui.transactions.AddTransactionFragment"
+        android:label="Novo Lançamento"
+        tools:layout="@layout/fragment_add_transaction"
+        xmlns:tools="http://schemas.android.com/tools" />
+
+    <fragment
+        android:id="@+id/transactionsFragment"
+        android:name="com.financeapp.ui.transactions.TransactionsFragment"
+        android:label="Transações"
+        tools:layout="@layout/fragment_transactions"
+        xmlns:tools="http://schemas.android.com/tools">
+        <action
+            android:id="@+id/action_transactions_to_add"
+            app:destination="@id/addTransactionFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/reportsFragment"
+        android:name="com.financeapp.ui.reports.ReportsFragment"
+        android:label="Relatórios"
+        tools:layout="@layout/fragment_reports"
+        xmlns:tools="http://schemas.android.com/tools" />
+
+    <fragment
+        android:id="@+id/goalsFragment"
+        android:name="com.financeapp.ui.goals.GoalsFragment"
+        android:label="Metas"
+        tools:layout="@layout/fragment_goals"
+        xmlns:tools="http://schemas.android.com/tools" />
+
+</navigation>

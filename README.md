@@ -74,7 +74,7 @@ app/src/main/java/com/financeapp/
 
 ## 👨‍💻 Desenvolvedor
 
-**Seu Nome** — [@lukelme](https://github.com/lukelme)
+[@lukelme](https://github.com/lukelme)
 
 Desenvolvido como projeto de portfólio para demonstrar habilidades em desenvolvimento Android nativo com Kotlin.
 

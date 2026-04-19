@@ -1,4 +1,4 @@
-# 💰 FinanceApp — Controle Financeiro para Android
+# 💰 FinanceApp — Controle Financeiro para Android (NÃO TERMINADO)
 
 App Android nativo desenvolvido em **Kotlin** para gestão de finanças pessoais.
 
